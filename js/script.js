@@ -70,6 +70,10 @@ function setDate() {
     year = now.getFullYear();
     month = now.getMonth() + 1;
     day = now.getDate();
+    // Leap year fix
+    if (year % 4 == 0) {
+        months[2].days = 29;
+    }
 }
 
 // Load user data and show appropriate screen
