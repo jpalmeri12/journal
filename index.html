@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GPR Journal</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="stage" class="screen">
+        <div id="entryScreen" class="screenBox">
+            <div id="monthText"></div>
+            <div id="dayCircles"></div>
+            <div id="dayText"></div>
+            <div id="inputBox0" class="inputBox">
+                <div class="inputTitle">• I am thankful for:</div>
+                <input class="inputInput" type="text">
+            </div>
+            <div id="inputBox1" class="inputBox">
+                <div class="inputTitle">• I would like to pray:</div>
+                <input class="inputInput" type="text">
+            </div>
+            <div id="inputBox2" class="inputBox">
+                <div class="inputTitle">• I noticed God in my life when:</div>
+                <input class="inputInput" type="text">
+            </div>
+            <div id="okButtonBox">
+                <div id="okButton">
+                    <div id="okButtonText" class="centerText">Save</div>
+                </div>
+            </div>
+            <div id="infoButton" class="pageButton">
+                <div class="centerText">?</div>
+            </div>
+            <div id="recordButton" class="pageButton">
+                <div class="centerText">!</div>
+            </div>
+        </div>
+        <div id="aboutScreen" class="screenBox">
+            <div id="aboutTitle">The GPR Journal</div>
+            <div id="aboutSubtitle">Gratitude • Prayer • Reflection</div>
+            <div id="aboutText">This is a simple journal designed to help you <span class="demi">connect with your faith</span> on a <span class="demi">daily basis</span>.
+            <br><br>
+            Each night before midnight, take a few minutes to answer <span class="demi">three prompts.</span> Keep your answers brief; <span class="demi">one sentence per prompt</span> is enough.
+            <br><br>
+            • Today, I am thankful for...
+            <br>
+            • Today, I would like to pray (for)...
+            <br>
+            • Today, I noticed God in my life when...
+            <br><br>
+            Try to do this every day for <span class="demi">one month</span>, but <span class="demi">try not to give the same answer multiple times</span>. At the end of the month, you'll be able to see <span class="demi">all of your responses</span> for that month at once--a collection of your <span class="demi">gratitude</span>, <span class="demi">prayers</span>, and <span class="demi">reflections</span>.
+            </div>
+            <div id="creditsText">Created with ♥ and faith by Jim Palmeri.</div>
+            <div class="continueButton">
+                <div class="centerText">Continue</div>
+            </div>
+        </div>
+        <div id="welcomeScreen" class="screenBox">
+            <div id="welcomeTitle">Welcome back!</div>
+            <div id="welcomeText">It's great that you're taking the time to reflect on the gifts that God has graciously given you.
+            <br>
+            <br>
+            Try to think of a <span class="demi">new response</span> to each of the prompts. This way, at the <span class="demi">end of the month</span>, you'll have a <span class="demi">huge collection</span> of <span class="demi">gratitude</span>, <span class="demi">prayers</span>, and <span class="demi">reflections</span>.
+            <br>
+            <br>
+            Consider your blessings, think of a prayer intention, and examine how God has been working in your life.
+            </div>
+            <div class="continueButton">
+                <div class="centerText">Continue</div>
+            </div>
+        </div>
+        <div id="recordScreen" class="screenBox">
+            <div id="recordTitle">Records</div>
+            <div id="recordBox"></div>
+            <div id="recordWarning">Stored locally in your browser. Don't reset your browsing data!</div>
+            <div class="continueButton">
+                <div class="centerText">Continue</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
