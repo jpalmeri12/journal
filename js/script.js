@@ -53,44 +53,6 @@ var months = {
     }
 };
 
-//var records = {
-//    2016: {
-//        9: {
-//            1: {
-//                thanks: "my cat's health",
-//                prayer: "that I find a cat",
-//                reflect: "He inspired me to make this cat"
-//            }
-//        }
-//    },
-//    2017: {
-//        4: {
-//            1: {
-//                thanks: "my grandpa's health",
-//                prayer: "that I find a job",
-//                reflect: "He inspired me to make this website"
-//            },
-//            2: {
-//                thanks: "my grandma's health",
-//                prayer: "that I find a cat",
-//                reflect: "He inspired me to make a meme"
-//            },
-//            10: {
-//                thanks: "my mom's health",
-//                prayer: "that I find a dog",
-//                reflect: "He inspired me to make a twitter joke"
-//            }
-//        },
-//        5: {
-//            1: {
-//                thanks: "my dad's health",
-//                prayer: "that I find a meme",
-//                reflect: "He inspired me to make a Hearthstone deck"
-//            }
-//        }
-//    }
-//};
-
 var records = {};
 
 $(function () {
