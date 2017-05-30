@@ -93,7 +93,7 @@ body {
     position: absolute;
     font-size: 1rem;
     text-align: center;
-    letter-spacing: .1rem;   
+    letter-spacing: .1rem;
 }
 
 .inputBox {
@@ -255,7 +255,7 @@ body {
 }
 
 #infoButton {
-    left: 10%;   
+    left: 10%;
 }
 
 #recordButton {
@@ -293,7 +293,29 @@ body {
     font-size: .625rem;
 }
 
-#creditsText, #recordWarning {
+#aboutErrorX {
+    top: 78.5%;
+    left: 5%;
+    font-size: 3rem;
+    font-family: "FuturaHeavy";
+    position: absolute;
+    color: red;
+    opacity: 0;
+}
+
+#aboutErrorText {
+    top: 84%;
+    left: 18%;
+    width: 75%;
+    font-size: .625rem;
+    font-family: "FuturaHeavy";
+    position: absolute;
+    color: red;
+    opacity: 0;
+}
+
+#creditsText,
+#recordWarning {
     width: 100%;
     top: 95%;
     position: absolute;

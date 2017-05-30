@@ -55,6 +55,7 @@ var months = {
 
 var records = {};
 
+// Runs on start
 $(function () {
     setDate();
     initTextboxHandlers();
@@ -63,6 +64,7 @@ $(function () {
     login();
 });
 
+// Get the date and set variables to it
 function setDate() {
     var now = new Date();
     year = now.getFullYear();
@@ -70,11 +72,13 @@ function setDate() {
     day = now.getDate();
 }
 
+// Load user data and show appropriate screen
 function login() {
     // Load data first
     var rec = localStorage.getItem("gprjournal");
     if (rec == null) {
         // New user
+        checkLocalStorage();
         showScreen("aboutScreen");
     } else {
         // Existing data
@@ -83,6 +87,27 @@ function login() {
     }
 }
 
+// Alerts the user if local storage is not available
+function checkLocalStorage() {
+    if (!storageAvailable('localStorage')) {
+        $("#aboutContinue").css("visibility", "hidden");
+        $(".aboutError").css("opacity", 1);
+    }
+}
+
+function storageAvailable(type) {
+    try {
+        var storage = window[type],
+            x = '__storage_test__';
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
+// Show a particular screen
 function showScreen(scr) {
     $(".screenBox.anim_fadeIn").removeClass("anim_fadeIn").addClass("anim_fadeOut");
     setTimeout(function () {
@@ -95,6 +120,7 @@ function showScreen(scr) {
     }
 }
 
+// Updates the entry screen
 function updateEntryScreen() {
     var monthName = months[month].name;
     var monthDays = months[month].days;
