@@ -110,7 +110,6 @@ function setDate() {
 
 function login() {
     // Load data first
-    localStorage.removeItem("gprjournal");
     var rec = localStorage.getItem("gprjournal");
     if (rec == null) {
         // New user
